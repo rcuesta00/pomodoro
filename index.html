@@ -11,12 +11,39 @@
 </head>
 <body>
     <h1>Pomodoro Clock</h1>
-    <div>
-        <div class="container options">
-            
+    <div class="main-container container">
+        <div class="container options row">
+                <div class="cell">
+                    Session
+                </div>
+                <div class="cell">
+                    Break
+                </div>
+        </div>
+        <div class="set container">
+            <div class="session">
+                <div class="minus cell" id = "minus_session">-</div>
+                <div class="display cell" id="display_session">2</div>
+                <div class="plus cell" id = "plus_session">+</div>
+            </div>
+            <div class="break">
+                <div class="minus cell" id = "minus_break">-</div>
+                <div class="display cell" id="display_break">1</div>
+                <div class="plus cell" id = "plus_break">+</div>
+            </div>
         </div>
         <div class="container clock">
-
+            <div class="row">
+                <div class="cell" id="play">Play</div>
+                <div class="cell" id="reset">Reset</div>
+            </div>
+            <div id="session_break_display">Session</div>
+            <span id="clock">00:02</span>
+            <div class="row">
+                <div class="cell" id="pause">Pause</div>
+                <div class="cell" id="stop">Stop</div>
+            </div>
         </div>
-    </div>
 </body>
+<script src="script.js"></script>
+</html>
